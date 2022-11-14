@@ -91,7 +91,7 @@ def ekf(total_frames):
 
 if __name__ == '__main__':
     pool = multiprocessing.Pool(processes=10)
-    video_name = 'video2.mp4'
+    video_name = 'video.mp4'
     total_frames = video2frame(video_name)
     print("there are {} frames in video".format(len(total_frames)))
     h, w, _ = total_frames[0].shape
